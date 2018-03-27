@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>fetch</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)fetch&lt;#Entity#&gt;ListRequest:(void (^)(void))success failure:(void (^)(NSString *errorString))failure {
+    
+    [self.sessionManager GET:APIServer(@"/moments/friends") parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        NSMutableArray *containerArray = @[].mutableCopy;
+        for (NSDictionary *dict in responseObject[@"list"]) {
+            THMomentModel *aModel = [THMomentModel modelWithDictionary:dict];
+            [containerArray addObject:aModel];
+        }
+        _emotionsModels = containerArray;
+        
+        success();
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        failure([self extractErrorString:error]);
+    }];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7FDA4EA1-A85A-4F31-B4BC-35FC15852C45</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Method Fetch Request</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>iv</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIView *advanceView = ({
+    UIView *view = [[UIView alloc] init];
+    [view setBackgroundColor:[UIColor whiteColor]];
+    [&lt;#self.contentView#&gt; addSubview:view];
+    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(@10);
+        make.trailing.equalTo(@(-10));
+        make.top.equalTo(titleLabel.mas_bottom);
+        make.height.equalTo(@50);
+    }];
+    view;
+});</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C2E4F8F3-6998-4AD7-B727-66D54E0F94F3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIView Init</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

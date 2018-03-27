@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>line</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIImageView *lineImgView = ({
+        UIImageView *imgView = [[UIImageView alloc] init];
+        [imgView setBackgroundColor:COLOR_LINE_SEPARATOR];
+    [&lt;#self.contentView#&gt; addSubview:imgView];
+        [imgView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.leading.trailing.equalTo(imgView.superview);
+            make.height.equalTo(@1);
+        }];
+        imgView;
+    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5225849E-E362-469C-B622-C005B809E680</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIImageView Draw Line</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

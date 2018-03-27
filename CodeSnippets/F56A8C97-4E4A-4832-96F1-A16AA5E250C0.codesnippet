@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ib</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIButton *actionBtn = ({
+    UIButton *button = [[UIButton alloc] init];
+    [button.layer setMasksToBounds:YES];
+    [button.layer setCornerRadius:20];
+    [button setBackgroundColor:COLOR_PRIMARY_YELLOW];
+    [button.titleLabel setFont:FontWithSize(14)];
+    [button setTitleColor:COLOR_TEXT_TITLE forState:UIControlStateNormal];
+    [button setTitle:@"回复" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(&lt;#event#&gt;BtnAction:) forControlEvents:UIControlEventTouchUpInside];
+    [&lt;#self.contentView#&gt; addSubview:button];
+    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.trailing.equalTo(@(12));
+        make.bottom.equalTo(@(-12));
+        make.width.equalTo(@100);
+        make.height.equalTo(@40);
+    }];
+    button;
+});</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F56A8C97-4E4A-4832-96F1-A16AA5E250C0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIButton Init</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

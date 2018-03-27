@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>fd</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>if (!_textView.text || _textView.text.length==0) {
+        [self hideHUDAddedTo:self.view text:@"内容不能为空"];
+        return;
+    }
+    
+    [self showHUDAddedTo:self.view];
+    [_viewModel sendLetterRequest:_textView.text success:^{
+        [self hideHUDAddedTo:self.view text:@"发送成功" completion:^{
+            [self dismissBtnAction:nil];
+        }];
+        
+    } failure:^(NSString *errorString) {
+        [self hideHUDAddedTo:self.view text:errorString];
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4CDD01D8-5AC9-4C82-BDE9-68F88B57D54B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Request Demo</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

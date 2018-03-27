@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>tvc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - ============= Init View =============
+
+- (void)initMainView {
+    
+}
+
+#pragma mark - ============= Request =============
+
+- (void)fetchData {
+    
+}
+
+#pragma mark - ============= Reload View =============
+
+- (void)reloadData {
+    
+}
+
+#pragma mark - ============= Action Event =============
+
+#pragma mark - ============= Notification =============
+
+- (void)initNotificationObserver {
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0955A782-8E1A-47EC-B360-0E6AC36CDDB7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Init ViewController Template</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

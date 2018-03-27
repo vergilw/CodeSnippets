@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>it</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UITableView *tableView = ({
+    UITableView *tableView = [[UITableView alloc] init];
+    [tableView setBackgroundColor:COLOR_BG_GRAY];
+    [tableView setDelegate:self];
+    [tableView setDataSource:self];
+    [tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    [tableView setTableFooterView:[[UIView alloc] init]];
+    if (@available(iOS 11.0, *)) {
+        [tableView setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+        [tableView setEstimatedRowHeight:0];
+        [tableView setEstimatedSectionHeaderHeight:0];
+        [tableView setEstimatedSectionFooterHeight:0];
+    }
+    [&lt;#self.view#&gt; addSubview:tableView];
+    [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(tableView.superview);
+    }];
+    tableView;
+});</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FAA070B1-ACC0-407B-8F8D-BBFA40E42160</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UITableView Init</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

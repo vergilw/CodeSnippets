@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ite</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>_textView = ({
+    UITextView *textView = [[UITextView alloc] init];
+    [textView setBackgroundColor:[UIColor clearColor]];
+    [textView setContentInset:UIEdgeInsetsZero];
+    [textView setTextContainerInset:UIEdgeInsetsMake(60+48/2-FontWithSize(16).lineHeight/2, 12, 12, 12)];
+    if (@available(iOS 11.0, *)) {
+        [textView setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+    }
+    [textView setUserInteractionEnabled:NO];
+    [self.contentView addSubview:textView];
+    [textView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.top.trailing.equalTo(textView.superview);
+        make.height.equalTo(@150);
+    }];
+    textView;
+});</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A95F3D3B-CCDA-4514-B4A9-ACB264E3F1A8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UITextView Init</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
