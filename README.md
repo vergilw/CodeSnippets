@@ -1,3 +1,3 @@
 # CodeSnippets
-xcode iOS code snippets manage
-vscode Flutter code snippets manage
+1. Xcode iOS code snippets manage
+2. VSCode Flutter code snippets manage

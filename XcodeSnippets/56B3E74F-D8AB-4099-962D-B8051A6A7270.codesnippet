@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>frame: CGRect(origin: .zero, size: CGSize(width: 35, height: 35))</string>
+	<string>CGRect(origin: .zero, size: CGSize(width: 35, height: 35))</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>56B3E74F-D8AB-4099-962D-B8051A6A7270</string>
 	<key>IDECodeSnippetLanguage</key>
