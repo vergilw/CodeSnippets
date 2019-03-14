@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>it</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>lazy fileprivate var textField: UITextField = {
+    let textField = UITextField()
+    if #available(iOS 11, *) {
+        textField.textContentType = .telephoneNumber
+    }
+    textField.delegate = self
+    textField.returnKeyType = .next
+    textField.keyboardType = .phonePad
+    textField.clearButtonMode = .whileEditing
+    textField.font = UIConstants.Font.body
+    textField.textColor = UIConstants.Color.head
+    textField.attributedPlaceholder = NSAttributedString(string: "手机号", attributes: [NSAttributedString.Key.foregroundColor : UIConstants.Color.foot])
+    let placeholderView = UIView(frame: CGRect(origin: .zero, size: CGSize(width: 36, height: 44)))
+    textField.leftView = placeholderView
+    return textField
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FD85B054-EDCD-4B9E-880B-E194D1C500EA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift UITextField Quick Initializer</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

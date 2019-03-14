@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>itf</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>_textField = ({
+        UITextField *textField = [[UITextField alloc] init];
+        [textField setBackgroundColor:[UIColor whiteColor]];
+        UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 18, 36)];
+        [textField setLeftView:leftView];
+        [textField setLeftViewMode:UITextFieldViewModeAlways];
+        [&lt;#self.contentView#&gt; addSubview:textField];
+        [textField mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(textField.superview);
+            make.leading.equalTo(@15);
+            make.trailing.equalTo(@(-15));
+            make.height.equalTo(@36);
+        }];
+        textField;
+    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5D05D512-AA6B-4A24-AAC4-EE4D7A1C66CE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UITextField Init</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
