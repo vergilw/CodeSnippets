@@ -6,10 +6,11 @@
 	<string>it</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
+		<string>CodeExpression</string>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>lazy fileprivate var textField: UITextField = {
+	<string>fileprivate lazy var textField: UITextField = {
     let textField = UITextField()
     if #available(iOS 11, *) {
         textField.textContentType = .telephoneNumber
@@ -23,6 +24,7 @@
     textField.attributedPlaceholder = NSAttributedString(string: "手机号", attributes: [NSAttributedString.Key.foregroundColor : UIConstants.Color.foot])
     let placeholderView = UIView(frame: CGRect(origin: .zero, size: CGSize(width: 36, height: 44)))
     textField.leftView = placeholderView
+    textField.leftViewMode = .always
     return textField
 }()</string>
 	<key>IDECodeSnippetIdentifier</key>

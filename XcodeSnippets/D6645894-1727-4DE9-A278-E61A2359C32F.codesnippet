@@ -30,6 +30,18 @@ fileprivate func initContentView() {
 // MARK: - ============= Constraints =============
 fileprivate func initConstraints() {
     
+}
+
+// MARK: - ============= Reload =============
+func setup(img: UIImage, title: String) {
+    iconImgView.image = img
+    
+    titleLabel.text = title
+}
+
+// MARK: - ============= Public =============
+class func fixedHeight() -&gt; CGFloat {
+    return 48
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>D6645894-1727-4DE9-A278-E61A2359C32F</string>

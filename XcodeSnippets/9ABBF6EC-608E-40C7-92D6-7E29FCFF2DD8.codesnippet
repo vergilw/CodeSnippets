@@ -10,7 +10,7 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>lazy fileprivate var textView: UITextView = {
+	<string>fileprivate lazy var textView: UITextView = {
         let textView = UITextView()
         textView.returnKeyType = .done
         textView.layer.cornerRadius = 5

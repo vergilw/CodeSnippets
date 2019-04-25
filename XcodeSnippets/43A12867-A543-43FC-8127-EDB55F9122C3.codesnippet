@@ -10,19 +10,21 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>lazy fileprivate var catalogueTableView: UITableView = {
-        let tableView = UITableView(frame: .zero, style: .plain)
-        tableView.separatorStyle = .none
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.tableFooterView = UIView()
-        if #available(iOS 11, *) {
-            tableView.contentInsetAdjustmentBehavior = .never
-            tableView.estimatedRowHeight = 0
-            tableView.estimatedSectionHeaderHeight = 0
-            tableView.estimatedSectionFooterHeight = 0
-        }
-        return tableView
-    }()</string>
+	<string>fileprivate lazy var tableView: UITableView = {
+    let tableView = UITableView(frame: .zero, style: .plain)
+    tableView.separatorStyle = .none
+    tableView.rowHeight = UITableView.automaticDimension
+    tableView.tableFooterView = UIView()
+    if #available(iOS 11, *) {
+        tableView.contentInsetAdjustmentBehavior = .never
+        tableView.estimatedRowHeight = 0
+        tableView.estimatedSectionHeaderHeight = 0
+        tableView.estimatedSectionFooterHeight = 0
+    }
+    tableView.showsHorizontalScrollIndicator = false
+    tableView.showsVerticalScrollIndicator = false
+    return tableView
+}()</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>43A12867-A543-43FC-8127-EDB55F9122C3</string>
 	<key>IDECodeSnippetLanguage</key>

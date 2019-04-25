@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kf</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>result in
+                switch result {
+                case .success(let value):
+                    self.badgeImgView.snp.remakeConstraints { make in
+                        make.leading.equalTo(self.nameLabel.snp.trailing).offset(5)
+                        make.centerY.equalTo(self.nameLabel)
+                        make.size.equalTo(CGSize(width: 20/value.image.size.height*value.image.size.width, height: 20))
+                    }
+                    self.badgeImgView.image = value.image
+                case .failure(let error):
+                    print("\(#function) kingfisher failure", error)
+                }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>68F4D340-0AD7-4D00-AA86-BE05C759242C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Kingfisher</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
